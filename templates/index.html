@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SpotCharts</title>
+
+    
+
+    <script src="https://d3js.org/d3.v6.js"></script>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    
+</head>
+
+<body>
+    <div id="loading" class="loading"></div>
+
+    <svg id="bubble-chart"></svg>
+
+    <div class="tooltip">
+        <img alt="" />
+        <div>
+            <a></a>
+            <span></span>
+        </div>
+    </div>
+    
+    
+</body>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</html>

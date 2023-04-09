@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpotCharts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f0f0f0;
+        padding: 2rem;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .hero {
+        background-color: #1DB954;
+        color: #fff;
+        padding: 3rem 0;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.5rem;
+      }
+      .button.is-primary {
+        background-color: #1DB954;
+        border-color: #1DB954;
+        margin-top: 2rem;
+      }
+      .button.is-primary:hover {
+        background-color: #1ed760;
+        border-color: #1ed760;
+      }
+      .button.is-primary.is-loading::after {
+        border-color: #fff transparent transparent transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-1">SpotCharts</h1>
+          <p class="subtitle is-3">Your Top 50 Spotify Artists</p>
+          <button onclick="window.location.href='/login'" class="button is-primary is-large">
+            Login with Spotify
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
