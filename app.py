@@ -65,10 +65,10 @@ def rjson():
     #     data = json.load(f)
     #     return jsonify(data)
     # set up Spotify API client
-    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='2cae1a89ddd941a3be1ffd58bd3ca544',
-                                               client_secret='71770ab297ac4912a1787f923e598eb2',
-                                               redirect_uri='http://localhost:5000/callback',
-                                               scope='user-top-read'))
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id= client_id,
+                                               client_secret= client_secret,
+                                               redirect_uri= redirect_uri,
+                                               scope= scope))
 
     # get user's top artists
     results = sp.current_user_top_artists(limit=50, time_range='long_term')
